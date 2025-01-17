@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export default {
     index: {
         // type: 'page',
@@ -10,6 +12,9 @@ export default {
     ___: {
         type: 'separator',
         title: 'FAQs',
+    },
+    agents: {
+        title: 'Agents',
     },
     data_release: "",
 }
