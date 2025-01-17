@@ -13,8 +13,5 @@ export default {
         type: 'separator',
         title: 'FAQs',
     },
-    agents: {
-        title: 'Agents',
-    },
     data_release: "",
 }
