@@ -8,3 +8,25 @@ Lit Canvas is a tool for researcher and LLM agents to collaborate to explore and
 After the user provides some literature-based questions, Lit Canvas invokes LLM agents to call tools and search relevant papers. 
 The user can follow up and provides feedback to refine the search.
 In the end, the agent can learn from the feedback and improve the search trajectories for future queries.
+
+
+import { Steps } from 'nextra/components'
+## Getting Started
+Before you get started, make sure you have configured the search engine and API keys properly.
+
+ 
+<Steps>
+### Configure the Search Engine
+ 
+You can change the default search engine in the Settings section. We currently support two search engines: PubMed and SenmanticScholar.
+
+
+### Configure the LLM
+ 
+We currently only support gpt4-o as the LLM. We will provide more options in the future release.
+
+You can use litcanvas without paying anything by turnning on "Use LLM via LitCanvas?". 
+If you choose to use LLMs via LitCanvas, you agree that your data could be included in a public dataset for research purposes (with personal information removed). 
+Or you can disable this and provide your own API keys.
+ 
+</Steps>
