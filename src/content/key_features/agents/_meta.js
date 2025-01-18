@@ -5,10 +5,4 @@ export default {
     llm: {
         title: "LLM"
     },
-    nora: {
-        title: "Nora"
-    },
-    api_search_agent: {
-        title: "apiSearchAgent"
-    },
 }
