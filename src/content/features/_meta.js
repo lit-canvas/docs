@@ -1,5 +1,5 @@
 export default {
-    canvas: "",
+    canvas: "Canvas",
     agents: "",
     pdf_reader: "",
     settings: "",

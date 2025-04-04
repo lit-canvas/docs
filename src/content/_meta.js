@@ -5,9 +5,9 @@ export default {
         // type: 'page',
         title: 'Quick Start',
     },
-    key_features: {
-    },
     tutorials: {
+    },
+    features: {
     },
     ___: {
         type: 'separator',
