@@ -1,0 +1,7 @@
+# `Search`
+
+The search agent is the "meta" agent that combines the `SearchPaper` and `SearchSuggestion` agent to search for papers.
+Given an initial user question, it comes up with a list of more concrete search questions and then uses the `SearchPaper` agent to retrieve the papers. 
+This leads to a tree-like structure of the search. 
+
+![An overview of the Search agent.](./search.png)

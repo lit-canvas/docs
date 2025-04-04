@@ -1,0 +1,59 @@
+
+# `SearchPaper` 
+
+The `SearchPaper` takes a user question and uses LLM to convert it to search queries for the corresponding scholar search engine. Then it will conduct the search and return a paper collection Node with the top-ranking papers:
+
+![An overview of the SearchPaper agent.](./search_paper.png)
+
+## Interacting with the results
+
+### Display search queries
+
+It's often important to rewrite the original question in specific ways as search queries to get the best retrieval results. Here we can see what are the search queries used to retrieve the papers. In this case, the result uses two generated search queries to retrieve the papers, and it displays the merged result. 
+
+![Show the used search query.](./search_paper_node1.png)    
+
+### Sorting the papers 
+
+We can sort the papers in this node with its `Relevance Score` (see the next section), `Citation Count` or `Publication Year`.
+
+![Sort the papers in the node.](./search_paper_node2.png)
+
+### Labeling paper Relevance
+
+It's an important way to provide feedback to the search agent by labeling the relevance scores of each returned papers. Simplify however over your mouse to `Relevance 1` for each paper node, and it will pop up the 1 - 5 scale for you to select.
+
+![Label the relevance score of each paper.](./search_paper_node3.png)
+
+The rubrics are as follows:
+
+- 1 = not relevant at all  <br/>
+      No connection to the topic or question
+- 2 = a bit relevant <br/>
+      Slight relevance; mentions topic-related concepts but lacks useful content.
+- 3 = somewhat relevant<br/>
+       Indirectly helpful; provides background or related information
+- 4 = relatively relevant<br/>
+       Substantially aids in answering the question, though not fully comprehensive; or it might come from less recognized publishers
+- 5 = highly relevant<br/>
+       Directly answers the question with comprehensive information from a credible source
+
+## Follow-up Actions 
+
+### Show more papers 
+
+Overall you find the thread of search is useful, and you want to continue with this line of search. You can click the `Show more papers` button, which uses the same search query to retrieve more papers.
+
+![Show more papers](./search_paper_followup1.png)
+
+### AI-suggested search 
+
+Sometimes you find the set of search queries less helpful and you want to start a new thread of search. But comparing from starting completely from scratch, you can also attempt to prompt the models to come up with other queries given the current search results and your feedback. It uses the [general search agent](./search) to generate multiple candidates for searching next.  
+
+![AI-suggested search](./search_paper_followup2.png)
+
+### User Suggestion
+
+In this case, you want to provide your own search suggestions to the agent to plan for the new search. You can click the `User Suggestion` button, and it will pop up a dialog for you to enter your own search queries. You can similarly hit `Shift + Enter` to execute the search.
+
+![User suggestion](./search_paper_followup3.png)

@@ -1,6 +1,6 @@
 export default {
     canvas: "Canvas",
-    agents: "",
+    agent: "",
     pdf_reader: "",
     settings: "",
 }
