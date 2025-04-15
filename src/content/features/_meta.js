@@ -1,6 +1,6 @@
 export default {
     canvas: "Canvas",
     agent: "",
-    pdf_reader: "",
+    side_panel: "Side Panel",
     settings: "",
 }
