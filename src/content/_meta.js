@@ -11,7 +11,7 @@ export default {
     },
     ___: {
         type: 'separator',
-        title: 'FAQs',
     },
+    faq: "",
     data_release: "",
 }
