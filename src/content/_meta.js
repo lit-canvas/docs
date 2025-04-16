@@ -5,13 +5,13 @@ export default {
         // type: 'page',
         title: 'Quick Start',
     },
-    tutorials: {
-    },
     features: {
+    },
+    tutorials: {
     },
     ___: {
         type: 'separator',
     },
-    faq: "",
+    faq: "FAQ",
     data_release: "",
 }
